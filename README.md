@@ -10,6 +10,7 @@ This script needs to be run with Administrator privileges so privilege escalatio
 The host (Tor Hidden Service on WSL) can not seem to accept the connection requested by the client, presumably by Windows Firewall even while accepting inbound and outbound connections. That is why I decided to post the script even though it is not complete and working, hoping someone else might figure out how to get it to function properly. If so I hope that the solution will be shared with me so I can complete it as well.
 
 ```/etc/ssh/sshd_config``` currently needs to be changed manually:
+
   PermitRootLogin yes
   PasswordAuthentication yes
  
