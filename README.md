@@ -16,5 +16,5 @@ The host (Tor Hidden Service on WSL) can not seem to accept the connection reque
 1. enables linux feature if not enabled (**wait for script to finish and restart**)
 1. creates scheduled task to run log.ps1 if none exists
 1. after restart changes scheduled task to trigger at login to run the script again and install WSL (**wait for script to finish, log out and log back in**)
-1. creates bash script in WSL (```function isit{}```)
+1. creates bash script in WSL
 1. changes log.ps1 to run ```wsl /tmp/bigfoot```
