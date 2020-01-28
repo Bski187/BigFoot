@@ -1,0 +1,14 @@
+CLIENT
+
+apt install -y tor openssh-client
+nano /etc/tor/torrc (ADD AFTER cat /#HIDDENSERVICEPORT 22 127.0.0.1:22)
+
+"
+HidServAuth SERVERDOMAIN COOKIE
+"
+
+systemctl restart tor.service
+
+**GRAB hostname/URL**
+
+torify ssh server@SERVERDOMAIN
