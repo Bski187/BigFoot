@@ -10,4 +10,4 @@ HiddenServiceAuthorizeClient stealth server
 "
 
 systemctl restart tor.service
-cat /var/lib/tor/ssh/hostname (POST IT)
+cat /var/lib/tor/ssh/hostname (COPY URL AND COOKIE)
