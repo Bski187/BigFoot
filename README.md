@@ -14,7 +14,7 @@ The host (Tor Hidden Service on WSL) can not seem to accept the connection reque
   PermitRootLogin yes
   PasswordAuthentication yes
  
- I have not yet automated this
+ I have not yet automated this. The ```/tmp/bigfoot``` bash script also still has to be configured to initialize at every wsl startup for automation.
 
 
 ### Steps of the script:
