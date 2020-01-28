@@ -11,6 +11,7 @@ The host (Tor Hidden Service on WSL) can not seem to accept the connection reque
 
 
 ### Steps of the script:
+**(The READABLE script will not work because of the spacing messing up the script when it goes through Out-File)**
 
 1. enables linux feature if not enabled (**wait for script to finish and restart**)
 1. creates scheduled task to run log.ps1 if none exists
